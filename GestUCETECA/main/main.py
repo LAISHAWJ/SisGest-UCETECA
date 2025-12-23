@@ -25,6 +25,17 @@ class Biblioteca:
     print("\n=== USUARIOS REGISTRADOS ===")
     for usuario in self.usuarios:
         print(f"- {usuario['nombre']} (ID: {usuario['id']})")
+
+
+    def prestar_libro(self, titulo, id_usuario):
+        for libro in self.libros:
+            if libro["titulo"] == titulo and libro["disponible"]:
+                libro["disponible"] = False
+            print(f"Libro '{titulo}' prestado a usuario {id_usuario}")
+            return True
+    print("Libro no disponible")
+
+   return False
         
 
 if __name__ == "__main__":
