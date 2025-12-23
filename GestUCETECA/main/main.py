@@ -1,9 +1,6 @@
 # main.py - Sistema de Gesti�n de Biblioteca
 class Biblioteca:
-    def __init__(self):
-        self.libros = []
-        self.usuarios = []
-
+   
     def _init_(self):
            self.items = {}  # Cambia lista por diccionario
     
