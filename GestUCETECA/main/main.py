@@ -21,6 +21,11 @@ class Biblioteca:
         self.usuarios.append(usuario)
         print(f"Usuario '{nombre}' registrado exitosamente")
         
+        def listar_usuarios(self):
+    print("\n=== USUARIOS REGISTRADOS ===")
+    for usuario in self.usuarios:
+        print(f"- {usuario['nombre']} (ID: {usuario['id']})")
+        
 
 if __name__ == "__main__":
     biblioteca = Biblioteca()
