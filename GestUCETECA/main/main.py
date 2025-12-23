@@ -3,6 +3,9 @@ class Biblioteca:
     def __init__(self):
         self.libros = []
         self.usuarios = []
+
+    def _init_(self):
+           self.items = {}  # Cambia lista por diccionario
     
     def agregar_libro(self, titulo, autor):
         libro = {"titulo": titulo, "autor": autor, "disponible": True}
