@@ -36,6 +36,14 @@ class Biblioteca:
     print("Libro no disponible")
     return False
 
+def devolver_libro(self, titulo):
+    for libro in self.libros:
+        if libro["titulo"] == titulo:
+            libro["disponible"] = True
+            print(f"Libro '{titulo}' devuelto exitosamente")
+            return True
+    return False
+
 
 if __name__ == "__main__":
     biblioteca = Biblioteca()
