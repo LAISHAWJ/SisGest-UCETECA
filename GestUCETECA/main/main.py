@@ -15,6 +15,13 @@ class Biblioteca:
             estado = "Disponible" if libro["disponible"] else "Prestado"
             print(f"- {libro['titulo']} por {libro['autor']} [{estado}]")
 
+    # Agregar al archivo main.py
+    def registrar_usuario(self, nombre, id_usuario):
+        usuario = {"nombre": nombre, "id": id_usuario, "prestamos": []}
+        self.usuarios.append(usuario)
+        print(f"Usuario '{nombre}' registrado exitosamente")
+        
+
 if __name__ == "__main__":
     biblioteca = Biblioteca()
     biblioteca.agregar_libro("Cien Años de Soledad", "Gabriel García Márquez")
