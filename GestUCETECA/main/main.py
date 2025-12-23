@@ -22,9 +22,13 @@ class Biblioteca:
         print(f"Usuario '{nombre}' registrado exitosamente")
         
         def listar_usuarios(self):
-    print("\n=== USUARIOS REGISTRADOS ===")
+      print("\n=== USUARIOS REGISTRADOS ===")
     for usuario in self.usuarios:
         print(f"- {usuario['nombre']} (ID: {usuario['id']})")
+        
+    def eliminar_todos_los_libros(self):
+    self.libros = []
+    print("¡Todos los libros han sido eliminados!")
         
 
 if __name__ == "__main__":
